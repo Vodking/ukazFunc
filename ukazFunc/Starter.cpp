@@ -34,12 +34,12 @@ void MakeDecision(float(*ptrData)(float num1, float num2), float num3, float num
 }
 
 
-void DataIn(float num1,float num2, char op)
+void DataIn(float* num1,float* num2, char op)
 {
     std::cout << "¬ведите первое число: ";
-    std::cin >> num1;
+    std::cin >> *num1;
     std::cout << "¬ведите второе число:";
-    std::cin >> num2;
+    std::cin >> *num2;
     std::cout << "¬ведите операцию + - * / %";
     std::cin >> op;
 }

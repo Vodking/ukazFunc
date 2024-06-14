@@ -53,7 +53,7 @@ int main()
 	float num1 = 0.0f;
 	float num2 = 0.0f;
 	//DataIn(num1, num2, deist);
-	DataIn(num1, num2, deist);
+	DataIn(&num1, &num2, deist);
 	Checker(deist,num1,num2);
 
 	return 0;
